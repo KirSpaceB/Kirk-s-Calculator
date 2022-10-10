@@ -1,0 +1,6 @@
+.numbers {
+    display: grid;
+    grid-column-start: auto;
+    width: 500px;
+    height: 500px;
+}
