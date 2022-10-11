@@ -14,6 +14,8 @@ var multiply = document.querySelector('.multiply');
 var divide = document.querySelector('.divide');
 var equal = document.querySelector('.equalsign');
 
+const calcNumbers = [1,2,3,4,5,6,7,8,9];
+
 //Giving the numbers clickability
 //The functions searches the doc finds the id of the specific tag that has calc-screen then .value gets the integer value of 'calc-screen' then add numOne value to it.
 function onClickButton1() {
@@ -58,7 +60,11 @@ function divideOnClick() {
     document.getElementById('calc-screen').value += divide.value;
 }
 
-operate(num1,num2,+) {
-    
+function operate() {
+    const initalValue = 0;
+    const sum = calcNumbers.reduce(
+        (previousVal, currentVal) => previousVal + currentVal, initalValue
+    )
+    console.log(sum)
 }
 // How can we do an hold a number while calling the operational to add another number
