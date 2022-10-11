@@ -12,32 +12,32 @@
 
     <div class="calculator">
 
-        <input type="text" class="calculator-screen" value="0" disabled />
+        <input type="text" class="calculator-screen" value=" " id="calc-screen" disabled />
 
     
         <div class="calculator-keys">
-            <button type="button" class="operator" value="+">+</button>
-            <button type="button" class="operator" value="-">-</button>
-            <button type="button" class="operator" value="*">&times;</button>
-            <button type="button" class="operator" value="/">&divide;</button>
+            <button class="addition" type="number" class="operator" value="&plus;" onclick="addOnClick()">&plus;</button>
+            <button class="subtract" type="button" class="operator" value="-" onclick="subOnClick()">-</button>
+            <button class="multiply" type="button" class="operator" value="&times;" onclick="multiplyOnClick()">&times;</button>
+            <button class="divide" type="button" class="operator" value="&divide;" onclick="divideOnClick()">&divide;</button>
 
-            <button type="button" value="7">7</button>
-            <button type="button" value="8">8</button>
-            <button type="button" value="9">9</button>
+            <button type="button" value="7" class="seven" onclick="onClickButton7()">7</button>
+            <button type="button" value="8" class="eight" onclick="onClickButton8()">8</button>
+            <button type="button" value="9" class="nine" onclick="onClickButton9()">9</button>
 
-            <button type="button" value="4">4</button>
-            <button type="button" value="5">5</button>
-            <button type="button" value="6">6</button>
+            <button type="button" value="4" class="four" onclick="onClickButton4()">4</button>
+            <button type="button" value="5" class="five" onclick="onClickButton5()">5</button>
+            <button type="button" value="6" class="six" onclick="onClickButton6()">6</button>
             
-            <button type="button" value="1">1</button>
-            <button type="button" value="2">2</button>
-            <button type="button" value="3">3</button>
+            <button type="button" value="1" class="one" onclick="onClickButton1()">1</button>
+            <button type="button" value="2" class="two" onclick="onClickButton2()">2</button>
+            <button type="button" value="3" class="three" onclick="onClickButton3()">3</button>
 
             <button type="button" value="0">0</button>
             <button type="button" class="decimal" value=".">.</button>
             <button class="all-clear" value="all-clear">AC</button>
 
-            <button type="equal-sign" value="=" class="equal-sign">=</button>
+            <button type="equal-sign" value="=" class="equalsign" onclick="equalsOnClick()">=</button>
 
         </div>
         
